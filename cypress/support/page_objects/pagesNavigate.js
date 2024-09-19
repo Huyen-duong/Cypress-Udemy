@@ -28,7 +28,7 @@ export class PageModel{
         groupMenuItem("Modal & Overlays");
         cy.contains('Tooltip').click();
     }
-    alert(){
+        alert(){
         groupMenuItem("Tables & Data");
         cy.contains('Smart Table').click();
     }

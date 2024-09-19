@@ -160,7 +160,7 @@ expect(property).to.equal('test@test.com')
         // cy.get('[type="checkbox"]').eq(0).click({force: true})
 
     })
-    it('Datepicker', ()=>{
+    it.only('Datepicker', ()=>{
 
         function navigateToMontFuture(day){
                 let date= new Date()
@@ -242,7 +242,7 @@ expect(property).to.equal('test@test.com')
         })
 
     })
-    it.only('alert message',() =>{
+    it('alert message',() =>{
         cy.visit('/')
         cy.contains('Tables & Data').click();
         cy.contains('Smart Table').click();
